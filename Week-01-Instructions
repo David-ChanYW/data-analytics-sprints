@@ -1,23 +1,35 @@
 Here is a data analysis challenge based on the mtcars dataset, framed around a real-world business scenario.
 🏎️ The Challenge Scenario: "The 1974 Fleet Optimization Audit"
 The year is 1974. In the wake of the recent global oil crisis, your company's executive team wants to overhaul their corporate vehicle fleet. They have handed you data on 32 automobile models (mtcars).
+
 Your mission is to find the perfect balance between fuel efficiency (economy) and engine performance (power) to help them decide which cars to purchase for their employees and executives.
+
 📋 Your Analysis Tasks
+
+
 To complete this challenge, you need to write an R script that answers the following four core questions:
 1. The Fuel Efficiency Baseline (Descriptive Stats & Distribution)
 	• What to analyze: Calculate the summary statistics (mean, median, range) for fuel efficiency (mpg). Visualize how mpg is distributed across all 32 cars using a histogram or a boxplot.
 	• Impact: This establishes your baseline. It tells management what a "normal" or "efficient" car looks like in this dataset so they can set realistic fleet targets.
+
 2. Transmission Type vs. Fuel Economy (Group Comparison)
 	• What to analyze: Compare the average mpg of automatic transmissions (am = 0) against manual transmissions (am = 1). Run a t-test to determine if the difference in fuel efficiency between the two groups is statistically significant.
 	• Impact: This helps executives make a firm policy decision. If manual cars are significantly more fuel-efficient, the company might mandate manual-only vehicles to cut fuel costs, despite driver preference.
+
 3. The Trade-Off: Power vs. Efficiency (Correlation & Regression)
 	• What to analyze: Create a scatter plot mapping Horsepower (hp) on the X-axis against mpg on the Y-axis. Build a simple linear regression model (lm(mpg ~ hp, data = mtcars)) to quantify exactly how much fuel efficiency drops for every additional unit of horsepower.
 	• Impact: This gives management a precise "price tag" on power. If an executive demands a high-horsepower car, you can show them exactly how many miles per gallon that decision will cost the company annually.
+
 4. Vehicle Weight and Engine Size (Multivariate Segmenting)
 	• What to analyze: Weight (wt) and displacement (disp) strongly affect efficiency. Group the cars into three categories (e.g., Light, Medium, Heavy) and analyze how weight impacts the relationship between engine size and fuel economy.
 	• Impact: This allows you to recommend specific "tiers" of vehicles. You can recommend light/small-displacement cars for standard staff (maximum savings) and medium cars for regional managers who need reliability.
+
 📊 Expected Deliverables
+
 When you finish your R script, your final report should clearly state:
+
 1. The Top 3 Recommendations: Which specific car models from the dataset offer the absolute best compromise of decent horsepower and top-tier mpg?
+
 2. The "Avoid" List: Which cars should be completely banned from the corporate fleet due to disastrous fuel economy?
+
 Would you like me to provide the full R code solution to check your work against when you're done, or would you like a hint on how to clean and prepare the mtcars data first (like converting am and cyl to factors)?
